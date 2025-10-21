@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Infographic và Video</title>
+    <style>
+        :root{--gap:1rem;--max:1100px}
+        body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:1.25rem;display:flex;justify-content:center;background:#f7f7f8;color:#111}
+        .wrap{max-width:var(--max);width:100%}
+        header{margin-bottom:1rem}
+        h1{margin:.25rem 0;font-size:1.5rem}
+        p.lead{margin:.25rem 0;color:#333}
+        .media{display:grid;grid-template-columns:1fr;gap:var(--gap)}
+        @media(min-width:900px){ .media{grid-template-columns:1fr 1fr;align-items:start} }
+        figure{margin:0;background:#fff;padding:.5rem;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+        img.infographic{width:100%;height:auto;display:block;border-radius:4px}
+        .caption{font-size:.9rem;color:#555;margin-top:.5rem}
+        video{width:100%;height:auto;border-radius:4px;background:#000;display:block}
+        footer{margin-top:1rem;font-size:.85rem;color:#666}
+        .meta{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+    </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-labelledby="page-title">
+    <header>
+      <h1 id="page-title">Tổng quan nhanh</h1>
+      <p class="lead">Mô tả ngắn: Infographic minh họa các điểm chính; kèm video MP4 trình bày chi tiết.</p>
+    </header>
+
+    <section class="media" aria-label="Infographic và video">
+      <figure aria-labelledby="fig-inf-title">
+        <img class="infographic" src="https://github.com/LyPhanGiaHung/Phan_2-Bai_thuc_hanh_so_05-CT005-NTCNS/blob/main/Infographic%20-%20Infographic%20v%E1%BB%81%20l%E1%BB%A3i%20%C3%ADch%20c%E1%BB%A7a%20c%C3%B4ng%20ngh%E1%BB%87%20s%E1%BB%91%20trong%20h%E1%BB%8Dc%20t%E1%BA%ADp.png?raw=true" alt="Infographic: sơ đồ tóm tắt các bước chính" loading="lazy" />
+        <figcaption id="fig-inf-title" class="caption">Infographic — tóm tắt trực quan các bước.</figcaption>
+      </figure>
+
+      <figure aria-labelledby="fig-video-title">
+        <video controls preload="metadata" poster="video-poster.jpg" playsinline>
+          <source src="https://github.com/LyPhanGiaHung/Phan_2-Bai_thuc_hanh_so_05-CT005-NTCNS/raw/refs/heads/main/Video%20capcut%20MP4.mp4" type="video/mp4">
+          Trình duyệt của bạn không hỗ trợ thẻ video. Bạn có thể tải xuống video tại <a href="video.mp4">video.mp4</a>.
+        </video>
+        <figcaption id="fig-video-title" class="caption">Video MP4 — bản trình bày chi tiết (có phụ đề nếu có sẵn).</figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <div class="meta">
+        <span>© 2025 Nhóm 5/Quỳnh Hương.</span>
+        <span>— Bản quyền được bảo lưu.</span>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
